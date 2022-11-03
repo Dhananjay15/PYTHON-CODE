@@ -1,0 +1,89 @@
+#Apply Train test split before Feature Engineering to prevent any data leakage.
+############################
+- Handling missing values>>
+1) In case of numerical data with no outliers present replace nan values with Mean
+2) In case of numerical data with outliers present replace nan values with Median
+3) In case of Temporal data replace it with the (difference in time),ffill,bfill
+4) In case of Categorial Nan values. A) replace with Mode(can cause Imbalance), 
+				     B) create a classifier model to predict the nan value
+				     C) apply unsupervised ML
+Use kmeans are create n number of centroids (where n will be the number of categories needed in the feature).
+
+##############################
+- Encoding>>
+@ususaly for Categorical features
+@Nominal and Ordinal(rank) encoding
+
+@Nominal Encoding>>a)One HOT Encoding
+		   b)ONE with many categories
+		   c)Mean Encoding	
+
+A)Creates one And zero. look for dummy variable trap. Cant be used with many different labels
+B)used when we have many labels. Pick most repating 10 and use ONE or label_count_encoding
+
+
+@Ordinal Encoding>>a)Label encoding
+		   b)Target guided ordinal encoding
+
+@ordinal encoding is done for Temporal variable also.
+
+A)gives rank and encode.
+B)Calculate the mean and assign the Rank.
+
+#############################
+#Handling Imbalance Dataset
+@ use UP-sampling , DOWN-sampling ,SMOT
+Use Random Forest(Imblearn--Ensemble Technique)
+
+#############################
+- Handling Outliers>>
+@check the importance of the outlier with respect to Usecase.
+@keep it or delete it
+@replace upper bound outliers with the 95%
+and lower bound outliers with 5% value.
+
+$Which Machine LEarning Models Are Sensitive To Outliers?
+Naivye Bayes Classifier--- Not Sensitive To Outliers
+SVM-------- Not Sensitive To Outliers
+Linear Regression---------- Sensitive To Outliers
+Logistic Regression------- Sensitive To Outliers
+Decision Tree Regressor or Classifier---- Not Sensitive
+Ensemble(RF,XGboost,GB)------- Not Sensitive
+KNN--------------------------- Not Sensitive
+Kmeans------------------------ Sensitive
+Hierarichal------------------- Sensitive
+PCA-------------------------- Sensitive
+Neural Networks-------------- Sensitive
+
+
+###############################
+– Normalizing and Scaling( Numerical Variables)
+
+Normalization>>
+Normalization (or min-max normalization) scales all values in a fixed range between 0 and 1. 
+This transformation does not change the distribution of the feature and due to the decreased standard deviations, the effects of the outliers increases. 
+Therefore, before normalization, it is recommended to handle the outliers
+
+Standardization>>
+Standardization (or z-score normalization) scales the values while taking into account standard deviation. 
+If the standard deviation of features is different, their range also would differ from each other. 
+This reduces the effect of the outliers in the features.
+
+Transformation of Features>>
+Why Transformation of Features Are Required?
+
+Linear Regression---Gradient Descent ----Global Minima
+Algorithms like KNN,K Means,Hierarichal Clustering--- Eucledian Distance
+Every Point has some vectors and Directiom
+
+Deep Learning Techniques(Standardization, Scaling) 1.ANN--->GLobal Minima, Gradient 2.CNN 3.RNN
+0-255 pixels
+
+Types Of Transformation>>
+1 Normalization And Standardization
+2 Scaling to Minimum And Maximum values
+3 Scaling To Median And Quantiles
+4 Guassian Transformation Logarithmic Transformation Reciprocal Trnasformation Square Root Transformation Exponential Trnasformation Box Cox Transformation
+
+Standardization
+We try to bring all the variables or features to a similar scale. standarisation means centering the variable at zero. z=(x-x_mean)/std

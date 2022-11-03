@@ -1,0 +1,11 @@
+@we do feature selection due to curse of dimmensionality
+
+#VarianceThreshold>>
+Feature selector that removes all low variance features
+This feature selection algorithm looks only at features(x),not desired output(y)
+and can thus be used for unsupervised learning.
+Threshold is a main param.
+
+#Feature_selection -- Correlation>>
+Remove the features which are highly correlated
+do a train_test_split before to prevent overfitting.

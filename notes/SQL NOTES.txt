@@ -1,0 +1,49 @@
+###ORDER>>
+USE
+SELECT
+FROM
+INNER JOIN
+OUTER JOIN
+CROSS JOIN
+WHERE
+ORDER BY
+GROUP BY
+LIMIT>>asec,desc
+
+### SELECT CLASUE>>
+can also perform airthmetic operation here.
+choose the columns from the table you want.
+use * to select all columns
+create new column with new name using AS clause.
+use DISTINCT clause to select unique values.
+use COUNT to get the total count of column.
+USE LENGTH() TO GET LENGTH OF VALUE.
+USE SUM() TO GET SUM OF ALL VALUES PRESENT.
+USE ROUND(), AVG().
+
+### WHERE CLAUSE>>
+we use it to filter data.
+using the different operator logic.>>> arthmetic,and,or,not,in,not in.
+use BETWEEN operator to give a range.
+use LIKE and REGEXP operator to match a string type.
+use IS NULL to get null values.
+#STRINGS>>
+^ beginning
+$ end
+| logical or
+[abcd]i
+[a-f]
+#STRING FORMATTING
+RIGHT(NAME,3).
+REPLACE(NAME,'0','').
+abs() for mod.
+power() for power.
+
+@#@PREFIXING SHOULD BE DONE CAREFULLY FOR JOINS AND COLUMN SELECTION.
+
+###INNER JOIN>>
+from table
+JOIN table ON same prefix column name with equal condition.
+
+##we can use using clause to join instead of on condition
+ONLY IF WE HAVE SAME COLUMN NAME.

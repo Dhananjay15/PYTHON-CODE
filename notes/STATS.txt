@@ -1,0 +1,82 @@
+@#@# descriptive statistics dscribes data ex-mean,median etc
+and Inferential statistics for making predictions. ex-Hypothesis testing
+
+#Population and sample-
+Population>>
+The total amount of dataset
+
+Sample>>
+sample is a subset of population.
+Some percent of total dataset.
+we usually take sample beacuse its to big to work on whole population.
+then we can perform measure of central tendency on sample.
+ex-Exit polls.
+
+We define s² in a way such that it is an unbiased sample variance.
+The (n-1) denominator arises from Bessel’s correction
+
+#Random variables-
+@Numerical and categorical variable
+Discrete>>
+the Whole number,ex-3,5,2
+
+Continous>>
+the variable lies within range of values,ex-3.567,2.667
+
+#Gaussian or Normal distribution>>
+@distribution is found to perform scaling(SND-standard normal distribution(mu=0,si=1)).
+A random variable x belongs to the gausian distribution(mu,sigma)(mean,SD).
+follows a curve called bell curve.
+(sd tell how far are the other quantities distributed from the mean while 
+variance measures the average degree to which each point differs from the mean).
+
+property of gaussian distribution-
+Empirical Rule>>
+probability(mu-si <= x <= mu+si)=68%
+probability(mu-2si <= x <= mu+2si)=95%
+probability(mu-3si <= x <= mu+3si)=99.7%
+
+#LOG NORMAL DISTRIBUTION>>
+when ln(x) belongs to a gaussian distribution.
+it is right skewed.
+(Skewness, in statistics, is the degree of asymmetry observed in a probability distribution)
+
+#CENTRAL LIMIT THEOREM-
+if we take sample from random variable x, and n>=30 datapoint for each sample,
+mean of all the sample will belong to a gaussian distribution
+of mean(mu) and variance of (si)^2/n.
+
+#CHEBYSHEV's Inequality-
+if a random variable dosenot follow gaussian distribution then, the empirical rule for it-
+probability(mu-Ksi <= x <= mu+Ksi) > 1-1/(K)^2
+
+#COVARIANCE>>
+gives the relation between two variables.
+its equation can be derived that from of variance.
+only tells us whether positively or negatively corelated
+range can vary from -infinity to +infinity.
+
+#PEARSON CORRELATION COFFECIENT-
+formula = cov(x,y)/(si(x)*si(y))
+ranges from(-1 to +1)
+gives the exact value of corelation
+useful in feature selection.
+
+#SPEARMANS rank correlation>>
+we use Pearson formula with rank of each value,
+the rank of variable is find out and based on rank it provides the correlation.
+Rank is the importance of Spearmans rank correlation
+
+#Z-score>>
+Tells in which standard deviation dataset falls into.
+z=(X-mu)/si
+
+#Normalization>>
+x(norm) = (x-x(min))/(x(max) - x(min))
+sklearn MINmax scaler
+
+#standardization>>
+formula zscore
+sklearn StandardScaler
+
+##STATISTICAL TESTS>>

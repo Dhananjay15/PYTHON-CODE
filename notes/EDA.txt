@@ -1,0 +1,56 @@
+@# SWEET-WIZ//PANDAS-PROFILING
+###########################
+1)check for size
+2)check for duplicate
+3)check for missing values
+4)check for categorical and numerical data>>discrete and contionous.
+5)check for variable distribution>>max-minimum value,mean,median.
+6)check for interaction
+7)check correlation
+###########################
+- Check for Duplicate Values>>
+if any then drop them
+
+##########################
+- Check for the balance of dataset>>
+upto 60--40 OK!
+
+##########################
+– Finding Missing value>>
+write observation of each step.
+finding out the null values of each columns total no.,mean.
+finding relationship between missing value and dependent variable through Median
+
+##########################
+– All the Numerical Variables>>
+check for the total number of numerical features.
+check for the Datetime features(year or no. of days)or Temporal features.
+finding relationship Temporal features and dependent variable.
+
+##########################
+– Distribution of the Numerical Variables>>
+check for the number of continous and discrete variables(excluding id,temporal variable).
+find relationship between them and depndent variable.
+check for distribution Type.
+
+##########################
+– Checking Outliers>>
+if the points fall after the third standard deviation.
+or the Z-score is outside the range of third standard deviation.
+
+1. Arrange the data in increasing order
+2. Calculate first(q1) and third quartile(q3)
+3. Find interquartile range (q3-q1)
+4.Find lower bound q1*1.5
+5.Find upper bound q3*1.5
+Anything that lies outside of lower and upper bound is an outlier
+
+Categorical box plot for Categorical feature
+
+##########################
+– Categorical Variables>>
+check for the total number of Categorical features.
+find relationship between them and depndent variable.
+
+– Cardinality of Categorical Variables>>
+How many unique categories in the Categoriacl feature.
