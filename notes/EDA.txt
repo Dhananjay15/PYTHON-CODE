@@ -1,5 +1,10 @@
 @# SWEET-WIZ//PANDAS-PROFILING
 ###########################
+to plot distributions of fstures we can use seaborn distplot and lines plt.axvlines
+
+
+
+###########################
 1)check for size
 2)check for duplicate
 3)check for missing values
