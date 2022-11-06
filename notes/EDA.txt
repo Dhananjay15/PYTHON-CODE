@@ -1,8 +1,10 @@
 @# SWEET-WIZ//PANDAS-PROFILING
 ###########################
-to plot distributions of fstures we can use seaborn distplot and lines plt.axvlines
-
-
+to plot distributions of features we can use seaborn distplot and lines plt.axvlines
+to plot counts we can use sns countplot and fr exact number df.value_counts()
+to plot relation among two features we can use scatterplot or regplot
+we can use sns pairplot for quick all feature relation (use only where columns are less)
+use heatmap for missing values and correlation
 
 ###########################
 1)check for size
