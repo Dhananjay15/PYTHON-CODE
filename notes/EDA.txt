@@ -14,6 +14,7 @@ use heatmap for missing values and correlation
 5)check for variable distribution>>max-minimum value,mean,median.
 6)check for interaction
 7)check correlation
+
 ###########################
 - Check for Duplicate Values>>
 if any then drop them
