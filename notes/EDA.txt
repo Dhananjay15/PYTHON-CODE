@@ -28,6 +28,7 @@ write observation of each step.
 finding out the null values of each columns total no.,mean.
 finding relationship between missing value and dependent variable through Median
 
+
 ##########################
 – All the Numerical Variables>>
 check for the total number of numerical features.
